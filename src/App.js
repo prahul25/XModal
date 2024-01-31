@@ -29,7 +29,6 @@ function App() {
     setObj({ username: "", email: "", phone: "", dob: "" });
   }
 
-
   function handleChange(e) {
     const { name, value } = e.target;
     setObj({ ...obj, [name]: value });
