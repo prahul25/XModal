@@ -36,12 +36,12 @@ function App() {
   }
 
   return (
-    <div className="modal">
+    <div className="model-wrapper">
       <h1>User Details Modal</h1>
       <button onClick={()=>setShowForm(true)}>Open Form</button>
       {showForm && (
         <>
-        <div className="model-wrapper" onClick={()=>setShowForm(false)}></div>
+        <div className="modal" onClick={()=>setShowForm(false)}></div>
         <form className="modal-content" onSubmit={handleSubmit}>
           <h1>Fill details</h1>
           <label htmlFor="username">Username:</label>
