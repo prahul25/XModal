@@ -42,7 +42,7 @@ function App() {
       {showForm && (
         <>
         <div className="modal" onClick={()=>setShowForm(false)}></div>
-        <form className="modal-content" onSubmit={handleSubmit}>
+        <div className="modal-content" >
           <h1>Fill details</h1>
           <label htmlFor="username">Username:</label>
           <input
@@ -79,10 +79,10 @@ function App() {
             onChange={handleChange}
             required
           />
-          <button type="submit" className="submit-button">
+          <button type="submit" className="submit-button" onClick={handleSubmit}>
             Submit
           </button>
-        </form>
+        </div>
         
         </>
       )}
